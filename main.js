@@ -1,3 +1,4 @@
+// JavaScriptコード（main.js）
 window.onload = function() {
     // 3秒後に次のページに遷移
     setTimeout(function() {

@@ -21,13 +21,20 @@ body {
 }
 
 #nextPage {
-    display: none;
+    display: none; /* 初めは隠しておく */
     text-align: center;
     font-size: 1.5rem;
     margin-top: 20px;
-overflow-y: auto; /* 縦方向にスクロールできる */
+    overflow-y: auto;
+    max-height: 100vh; /* スクロール対応 */
     width: 100%;
-    height: 1000px; /* 最大高さをビューポートに合わせる */
+}
+
+iframe {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 @keyframes fadeIn {
